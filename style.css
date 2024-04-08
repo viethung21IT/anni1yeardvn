@@ -7,41 +7,32 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f8d7da; /* Màu hồng nhạt cho nền */
+    overflow: hidden; /* Ẩn các phần vượt ra ngoài khung trình duyệt */
 }
 
 .container {
     text-align: center;
+    position: relative; /* Đặt vị trí tương đối để đặt các sao */
 }
 
 h1 {
     font-size: 2.5rem;
     color: #ffc107; /* Màu vàng cho tiêu đề */
+    position: relative; /* Đặt vị trí tương đối để đặt các sao */
+    z-index: 1; /* Đảm bảo tiêu đề nằm phía trên cùng */
 }
 
-.buttons {
-    margin-top: 20px;
+.star {
+    position: absolute; /* Đặt vị trí tuyệt đối để di chuyển các sao */
+    width: 1px;
+    height: 1px;
+    background-color: #fff; /* Màu của sao */
+    border-radius: 50%; /* Hình dạng sao là hình tròn */
+    animation: twinkle linear infinite; /* Áp dụng animation */
 }
 
-.button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 1rem;
-    background-color: #6f42c1; /* Màu tím cho nút */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #563d7c; /* Màu tím đậm khi rê chuột vào nút */
-}
-
-.content {
-    display: none;
-    margin-top: 20px;
-}
-
-.active {
-    display: block;
+@keyframes twinkle {
+    0% { opacity: 0; transform: translateY(-100px) rotate(0deg); } /* Trạng thái ban đầu */
+    50% { opacity: 1; } /* Trạng thái lấp lánh */
+    100% { opacity: 0; transform: translateY(100px) rotate(360deg); } /* Trạng thái kết thúc */
 }
