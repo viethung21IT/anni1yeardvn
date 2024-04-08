@@ -1,42 +1,21 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web của Tôi</title>
-    <link rel="stylesheet" href="style.css"> <!-- Liên kết với tệp CSS -->
+    <title>Moving button | Jessica</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>CHÚC MỪNG MỘT NĂM CHỊ EM</h1>
-            <button class="button" onclick="toggleContent('content1')">Vô tri</button>
-            <button class="button" onclick="toggleContent('content2')">Ảnh gái</button>
-        <!-- Các sao được thêm vào dưới tiêu đề -->
-        <div class="star" style="top: 20%; left: 10%; animation-duration: 1s; background: radial-gradient(circle, rgba(211,211,211,1) 0%, rgba(192,192,192,1) 100%);"></div>
-        <div class="star" style="top: 10%; left: 30%; animation-duration: 2s; background: radial-gradient(circle, rgba(211,211,211,1) 0%, rgba(192,192,192,1) 100%);"></div>
-        <div class="star" style="top: 30%; left: 50%; animation-duration: 1.5s; background: radial-gradient(circle, rgba(211,211,211,1) 0%, rgba(192,192,192,1) 100%);"></div>
-        <div class="star" style="top: 40%; left: 70%; animation-duration: 2.5s; background: radial-gradient(circle, rgba(211,211,211,1) 0%, rgba(192,192,192,1) 100%);"></div>
-        <div class="star" style="top: 25%; left: 90%; animation-duration: 1.2s; background: radial-gradient(circle, rgba(211,211,211,1) 0%, rgba(192,192,192,1) 100%);"></div>
-        <div class="buttons">
-            
-        </div>
-        <div class="content" id="content1">
-            <p>Cảm ơn em vì đã vô tri mỗi ngày, giúp cuộc sống KHÔ KHAN của trai IT thêm phần vô tri nhé</p>
-        </div>
-        <div class="content" id="content2">
-            <p>Kiểm cái gì. Ở đây chỉ có ảnh của Đan Vy</p>
+    <div class="wrapper">
+        <h2 class="question">Chúc mừng kỉ niệm một năm chị em💕💕</h2>
+        <h4 class="question-prompt">Chọn một trong hai cái nút để nhận bất ngờ nhé 🤞</h4>
+        <img class="gif" alt="gif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmlwZWN0ODEzZ25pYnhxdmR1cm8yaHhoaXZ2a3kzYjgyYjhzdnRqZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kzp48Ln177Fym9h7Ho/giphy.gif"/>
+        <div class="btn-group">
+            <button class="yes-btn">Không iu emm😠</button>
+            <button class="no-btn">có iuu em😽</button>
         </div>
     </div>
-
-    <script>
-        function toggleContent(id) {
-            var content = document.getElementById(id);
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
