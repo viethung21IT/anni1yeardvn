@@ -26,7 +26,6 @@ h1 {
     position: absolute; /* Đặt vị trí tuyệt đối để di chuyển các sao */
     width: 1px;
     height: 1px;
-    background-color: #fff; /* Màu của sao */
     border-radius: 50%; /* Hình dạng sao là hình tròn */
     animation: twinkle linear infinite; /* Áp dụng animation */
 }
